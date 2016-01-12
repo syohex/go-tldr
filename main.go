@@ -40,7 +40,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	header := color.New(color.BgBlue, color.Bold, color.FgCyan)
+	header := color.New(color.BgBlue, color.Bold, color.FgHiYellow)
 	quote := color.New(color.FgWhite)
 	list := color.New(color.FgGreen)
 	code := color.New(color.BgHiBlack, color.FgWhite)
@@ -56,7 +56,7 @@ func main() {
 
 		switch first {
 		case '#':
-			header.Print(strings.TrimLeft(line, `#`))
+			header.Print(strings.TrimLeft(line, `# `))
 			fmt.Print("\n")
 		case '>':
 			fmt.Print("  ")
