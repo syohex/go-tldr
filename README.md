@@ -5,3 +5,7 @@
 ## Screenshot
 
 ![tldr](image/tldr.png)
+
+## License
+
+MIT
